@@ -7,16 +7,159 @@
 body {
   background-image: url(./public/neonhoodie.jpg);
   background-position: center center;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
-  /* position: relative; */
+  position: relative;
+}
+
+.modal {
+  height: 100%;
+  width: 90%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.modal-content {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content span {
+  margin-top: 12vh;
+  margin-bottom: 2vh;
+  transition: 250ms;
+}
+
+.modal-content span:hover {
+  color: #006dba;
+  cursor: pointer;
+}
+
+/* //MEDIA QUERIES START// */
+@media all and (max-width: 768px) {
+  nav li {
+    display: none;
+    visibility: hidden;
+  }
+
+  .sidebar-container {
+    height: 5%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .line {
+    display: none;
+  }
+}
+
+/* //MEDIA QUERIES END// */
+
+nav {
+  width: 100%;
+  height: 2vh;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 30px;
+  display: flex;
+}
+
+nav li {
+  margin-right: 10vw;
+  list-style: none;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  transition: 250ms;
+  display: inline-block;
+  position: relative;
+}
+
+nav li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+nav li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: whitesmoke;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+nav li:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* HAMBURGER MENU */
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  right: 10px;
+  z-index: 2;
+}
+.line {
+  fill: none;
+  stroke: white;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
 }
 
 .sidebar-container {
-  border: 4px white solid;
+  border: 2px white solid;
   width: 100vh;
-  height: 60px;
-  /* position: fixed; */
+  /* height: 70px; */
+  height: 7%;
   transform-origin: left top;
   transform: rotate(-90deg) translateX(-100%);
 }
@@ -24,17 +167,17 @@ body {
 .sidebar {
   height: 100%;
   width: 80%;
-  border-left: 4px white solid;
+  border-left: 2px white solid;
   text-orientation: sideways-right;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 25vh;
+  margin-left: 20vh;
 }
 
 .sidebar span {
   color: white;
   font-size: 22px;
   font-weight: 900;
-  margin: 10px
+  margin: auto;
 }
