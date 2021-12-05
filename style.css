@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  /* overflow-x: hidden; */
 }
 
 body {
@@ -15,15 +14,16 @@ body {
 
 .modal {
   height: 100%;
-  width: 90%;
+  width: 100%;
   position: fixed;
   z-index: 1;
   top: 0;
   right: 0;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.9);
-  overflow-x: hidden;
+  overflow-y: hidden;
   transition: 0.5s;
+  overflow-y: hidden;
 }
 
 .modal-content {
@@ -61,6 +61,11 @@ body {
 @media screen and (min-width: 768px) {
   .line {
     display: none;
+    cursor: default;
+  }
+
+  .menu {
+    cursor: none;
   }
 }
 
@@ -157,8 +162,7 @@ nav li:hover:after {
 
 .sidebar-container {
   border: 2px white solid;
-  width: 100vh;
-  /* height: 70px; */
+  width: 106vh;
   height: 7%;
   transform-origin: left top;
   transform: rotate(-90deg) translateX(-100%);
