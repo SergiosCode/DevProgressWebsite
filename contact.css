@@ -157,17 +157,11 @@ nav a:hover:after {
 
 /* //MEDIA QUERIES START// */
 @media all and (max-width: 768px) {
-  nav li {
+  nav a {
     display: none;
     visibility: hidden;
   }
 
-  .sidebar-container {
-    height: 7%;
-  }
-  .menu {
-    cursor: default;
-  }
   .title-container {
     right: 7rem;
     top: 10rem;
@@ -188,6 +182,9 @@ nav a:hover:after {
 @media screen and (min-width: 768px) {
   .line {
     display: none;
+    cursor: default;
+  }
+  .menu {
     cursor: default;
   }
 }
