@@ -147,14 +147,48 @@ nav a:hover:after {
   stroke-width: 6;
 }
 
-.contact-form {
+.contact-form-container {
   width: 90rem;
   height: 80vh;
   background-color: rgba(0, 0, 0, 0.7);
   margin: auto;
   margin-top: 10vh;
+  border-radius: 5px;
 }
 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  /* margin-left: 20vw;
+  margin-right: 20vw; */
+}
+
+#firstName {
+  width: 20vw;
+  height: 3vh;
+  border-radius: 3px;
+  border: none;
+}
+
+#lastName {
+  width: 20vw;
+  height: 3vh;
+  border-radius: 3px;
+  border: none;
+}
+#email {
+  width: 20vw;
+  height: 3vh;
+  border-radius: 3px;
+  border: none;
+}
+
+#submit {
+  width: 20vw;
+  height: 3vh;
+  border-radius: 3px;
+  border: none;
+}
 /* //MEDIA QUERIES START// */
 @media all and (max-width: 768px) {
   nav a {
