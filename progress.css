@@ -143,9 +143,13 @@ nav a:hover:after {
   stroke-width: 6;
 }
 
+.details-frontend {
+  color: white;
+}
 
-
-
+.details-frontend div {
+    font-size: 100px;
+}
 
 /* //MEDIA QUERIES START// */
 @media all and (max-width: 768px) {
