@@ -212,6 +212,11 @@ nav a:hover:after {
 
 .title i {
   font-size: 80px;
+  transition: 2.5s;
+}
+
+.title i:hover{
+  margin-left: 20vw;
 }
 
 /* .title-container p {

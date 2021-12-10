@@ -143,12 +143,26 @@ nav a:hover:after {
   stroke-width: 6;
 }
 
-.details-frontend {
+.frontend {
   color: white;
+  background-color: black;
+  width: 40vw;
+  margin: 200px;
+  padding: 20px 0;
+  font-size: 25px;
+  text-align: center;
 }
 
-.details-frontend div {
-    font-size: 100px;
+.internetCheckbox {
+  display: flex;
+  align-items: center;
+}
+
+.internetCheckbox h3 {
+}
+
+#internet {
+  margin: 0 20px;
 }
 
 /* //MEDIA QUERIES START// */
