@@ -5,7 +5,8 @@
 
 body {
   background-color: #0a1229;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
+  /* overflow-x: hidden; */
 }
 
 .modal {
@@ -163,6 +164,7 @@ nav a:hover:after {
   padding-top: 8vh;
   align-items: center;
   transition: 250ms;
+  padding-bottom: 40px;
   /* margin-left: 20vw;
   margin-right: 20vw; */
 }
@@ -306,10 +308,14 @@ nav a:hover:after {
     line-height: 80px;
   }
 
+  .contact-form-container {
+    width: 23rem;
+  }
+
   .contact-form {
     margin-right: 150vw;
     /* align-items: flex-start; */
-    width: 50vh;
+    width: 44vh;
   }
 
   #firstName {
