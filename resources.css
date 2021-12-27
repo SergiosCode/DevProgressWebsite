@@ -1,6 +1,13 @@
-body {
-  background-color: black;
+* {
+  opacity: 10;
 }
+
+body {
+  background-image: url(/public/resourcebackground.jpg);
+  background-size: cover;
+  overflow-x: hidden;
+}
+
 .modal {
   height: 800%;
   width: 0;
@@ -112,7 +119,8 @@ nav a:hover:after {
   fill: none;
   stroke: white;
   stroke-width: 6;
-  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: stroke-dasharray 600ms
+      cubic-bezier(0.4, 0, 0.2, 1),
     stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .line1 {
@@ -141,6 +149,38 @@ nav a:hover:after {
   stroke-dasharray: 90 207;
   stroke-dashoffset: -134;
   stroke-width: 6;
+}
+
+.free-section {
+  border: 1px solid white;
+  margin-top: 15vh;
+  margin: 15vh 15vh;
+}
+
+.free-section h1 {
+  color: white;
+  font-size: 44px;
+}
+
+.free-section h3 {
+  color: white;
+  font-size: 32px;
+}
+
+.free-section a {
+  color: white;
+  font-size: 28px;
+}
+
+.free-section a:hover {
+  color: rgb(99, 97, 97);
+}
+
+.free-section p {
+  color: white;
+  font-size: 20px;
+  line-height: 1.5em;
+  margin-bottom: 6vh;
 }
 
 /* //MEDIA QUERIES START// */
