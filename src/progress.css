@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url(/src/public/progressbackground3.jpg);
+  background-image: url(./public/progressbackground3.jpg);
   background-size: cover;
   /* background-repeat: no-repeat; */
   width: 100%;

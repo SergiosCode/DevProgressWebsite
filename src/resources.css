@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: url(/src/public/resourcebackground.jpg);
+  background-image: url(./public/resourcebackground.jpg);
   background-size: cover;
   overflow-x: hidden;
 }
