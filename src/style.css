@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url(./public/neonhoodie.jpg);
+  background-image: url(/public/neonhoodie.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
