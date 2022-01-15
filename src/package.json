@@ -1,0 +1,19 @@
+{
+  "name": "devprogresswebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergiosCode/DevProgressWebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SergiosCode/DevProgressWebsite/issues"
+  },
+  "homepage": "https://github.com/SergiosCode/DevProgressWebsite#readme"
+}
